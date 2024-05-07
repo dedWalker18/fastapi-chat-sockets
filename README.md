@@ -1,13 +1,11 @@
-<h2 align="center">  Quahog Chatterbox : A Family Guy Themed REal Time Chat App  </h2>
+<h2 align="center">  Quahog Chatterbox: A Family Guy Themed Real Time Chat App  </h2>
 
 <h1 align="center">
 
    ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
    ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
    ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-   ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
    ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
-   ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
    ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
 
 
@@ -15,53 +13,50 @@
 
 <p align="center">   
    
-   <img src="backend/templates/logo_livbrary.png" alt="LIVrary Logo" width="400" height="400" style='text-align:center;'>
+   <img src="frontend/src/assets/logo.png" alt="LIVrary Logo" width="400" height="400" style='text-align:center;'>
    
 </p>
 
-**Welcome to LIVbrary, a feature-rich web application designed to streamline library operations and enhance the user experience for both patrons and administrators!**
+**Welcome to Quahog Chatterbox!! An End-TO-End Encrypted Real Time Chat Application using FastAPI & VueJS**
 
 **Key Features**
 
-* **User Management:**
+* **User Actions:**
 
-    * Users can request books from the admin.
-    * Browse and read ebooks in PDF format from their bookshelf (with a maximum of 5 books at a time).  
-    * Maintain a bookshelf with a 7-day loan period. Requested books are automatically revoked after 7 days to maintain circulation. 
-    * Search for books by title, author, or genre using a convenient search functionality. 
-    * Keep track of favorite books for easy access. 
-    * Add notes to books for personal reference. 
-    * Choose a colorful avatar to personalize their experience. 
-    * Receive email alerts if they don't log in daily to stay engaged (optional). 
-    * Get a monthly report via email with a PDF attachment summarizing their library activity (books returned, issued, logged-in timestamps).
-
+    * Users have JWT-based auth.
+    * Connect with friends (social-media functionalities).
+    * have real-time chats using web sockets. 
+    * Maintane Favorite friends list.
+    * Join groups with  text boards and group chat (inspired by Discord).
+    * Choose a colorful avatar to personalize their experience.
+    * Receive email alerts if they don't log in daily to stay engaged (optional).
+   
 * **Admin Management:**
 
-    * Create, Read, Update, and Delete (CRUD) functionalities for genres, books, user requests, and overdue books. 
-    * Manage the library's collection efficiently.
+    * Computer Vision model that looks for profanities in the global text board.
+    * Bans a user after three strikes!! Unless you are Peter Griffin obviously.. 
 
 * **Advanced Functionalities:**
 
     * **Asynchronous Tasks:** Leverage Celery and Redis for background tasks, ensuring a smooth user experience. 
     * **Email Notifications:** An integrated mail client sends automated email alerts and reports. 
-    * **Customizable Reports:**  Generate PDF reports containing library activity details using PDFKit. 
-    * **News Updates:** Stay informed! Access current news headlines in PDF format based on your region. News updates are refreshed asynchronously every three hours.
+    * **End-To-End Encrypted Messages:** Uses pair of usernames plus secret salt for encryption.
+    * **HTTPS:** Both backend and frontend run on HTTPS self-signed certificates.
 
 **Technical Stack**
 
 * Backend:
-    * Flask RESTX  - API framework for robust backend development.
+    * FastAPI  - API framework for robust backend development.
     * Swagger UI - User-friendly interface for API documentation.
     * SQLAlchemy - Powerful object-relational mapper (ORM) for database interactions.
-    * Flask-Caching, Celery, Redis - Tools for efficient caching and asynchronous tasks.
     * Custom SMTP Server - Handles email communication.
     * JWT Tokens - Secure user authentication and RBAC.
+   
 * Frontend:
     * Vue.js 2 - Modern JavaScript framework for a dynamic and interactive user interface.
     * Bootstrap - Popular CSS framework for responsive design.
-    * Jinja2 - Template engine for server-side rendering.
-    * Axios/Fetch - HTTP libraries for seamless communication between the frontend and the backend.
-    * Matplotlib - Python library for data visualization (charts and analytics).
+    * Axios/Fetch - The chat application gotta chat with the backend too!
+
 * Security:
     * HTTPS enforced using self-signed certificates for secure communication.
 
@@ -125,6 +120,6 @@
 
 **Conclusion**
 
-LIVbrary provides a comprehensive solution for managing libraries and enhancing the user experience. Its feature-rich design caters to both patrons and administrators, streamlining workflows and fostering a love for reading!
+Football chat outside Drunken Clam? Gossip about recent events in Spooner Street? We got y'all covered!!!
 
 ---
